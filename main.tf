@@ -184,7 +184,7 @@ resource "aws_codepipeline" "source_build" {
       output_artifacts = ["package"]
 
       configuration {
-        ProjectName = "${var.codebuild_project_names[0]}"
+        ProjectName = "${var.codebuild_build_project_name}"
       }
     }
   }
